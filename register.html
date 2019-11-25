@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="CSS/header_nav_footer.css">
+    <script src="js/banner.js"></script>
+    <script src="js/checkAccount.js"></script>
+    <script src="js/loginChecked.js"></script> 
+    <style>
+        .content {
+            margin: 30px auto;
+            width: 1004px;
+            overflow: hidden;
+        }
+
+        .content_left {
+            float: left;
+            width: 50%;
+            border-right: 1px solid #ccc;
+
+        }
+
+        .content_left form p {
+            margin: 10px 0 10px 111px;
+        }
+
+        .content_left form p:nth-child(1) {
+            font-size: 16px;
+            color: #5F5F5F;
+            text-align: center;
+        }
+
+        .content_left form p:nth-child(2) span:nth-of-type(2) {
+            font-size: 13px;
+        }
+
+        .content_left form p span:first-child {
+            display: inline-block;
+            width: 70px;
+            text-align: right;
+            font-size: 14px;
+            font-weight: 700;
+            color: #5F5F5F;
+        }
+
+        .content_left form p input:nth-child(2) {
+            width: 200px;
+            height: 30px;
+        }
+
+        .content_left form p:nth-child(3) button {
+            outline: 0;
+            border: 0;
+            width: 100px;
+            height: 30px;
+            background: #ccc;
+            color: #fff;
+        }
+
+        .content_left form p:nth-child(6) {
+            font-size: 14px;
+            padding-left: 61px;
+        }
+
+        .content_left form p:nth-child(6) a {
+            color: #377CB8;
+        }
+
+        .content_left form p:last-child input {
+            outline: 0;
+            border: 0;
+            width: 200px;
+            height: 30px;
+            font-size: 14px;
+            color: #fff;
+            background: #B1191A;
+        }
+
+        .content_left form p:last-child {
+            padding-left: 72px;
+        }
+
+        .content_right {
+            float: left;
+            font-size: 14px;
+        }
+
+        .content_right p {
+            margin: 128px 0 0 121px;
+        }
+
+        .content_right p a {
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #fff;
+            background: #B1191A;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="top_nav">
+            <img class="location" src="images/icon_location.png" alt="">
+            <a class="place" href="">送至杭州</a>
+            <div class="top_nav_right">
+                <span></span>
+                <a class="login" href="login.html" id="admin">登录</a>
+                <a href="register.html">免费注册</a>
+                <span>|</span>
+                <a href="searchResult.html">商品搜索
+                    <img src="images/sanjiao_03.png" alt="">
+                </a>
+                <span>|</span>
+                <a href="">商城会员</a>
+                <span>|</span>
+                <a href="">企业采购</a>
+                <span>|</span>
+                <a href="customerService.html">客户服务</a>
+                <span>|</span>
+                <a href="">网站导航</a>
+                <span>|</span>
+                <a href="shoppingCart.html">我的购物车</a>
+            </div>   
+        </div> 
+    </div>
+    <div class="header">
+        <div class="search">
+            <form action="">
+                <input type="text" name="search" placeholder="输入你想要的商品"><input type="submit" value="">
+            </form>
+            <p>
+                <a href="">买2送1</a>
+                <a href="">领500神券</a>
+                <a href="">199减100</a>
+                <a href="">服装</a>
+                <a href="">ups电源</a>
+                <a href="">虎牌</a>
+                <a href="">母婴5折抢</a>
+                <a href="">取暖器</a>
+                <a href="">手机</a>
+            </p>
+        </div> 
+    </div>
+    <div class="__nav">
+       <ul>
+            <li><a class="nav_first_a" href="">全部商品分类</a></li>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="">服装城</a></li>
+            <li><a href="">美妆馆</a></li>
+            <li><a href="">京东超市</a></li>
+            <li><a href="">生鲜</a></li>
+            <li><a href="">全球购</a></li>
+            <li><a href="">闪购</a></li>
+            <li><a href="">拍卖</a></li>
+            <li><a href="">金融</a></li>
+       </ul> 
+    </div>
+    <div class="content">
+        <div class="content_left">
+            <form action="">
+                <p>欢迎注册</p>
+                <p>
+                    <span>手机号码:</span>
+                    <input type="text" name="phone_number" required>
+                    <span>必填</span>
+                </p>
+                <p>
+                    <span>验证码:</span>
+                    <input type="number" name="yanzhengma"><button>点击获取验证码</button>
+                </p>
+                <p>
+                    <span>姓名</span>
+                    <input type="text" name="name" required>
+                    <span>*</span>
+                </p>
+                <p>
+                    <span>密码</span>
+                    <input type="password" name="password" required>
+                    <span>*</span>
+                </p>
+                <p>
+                    <input type="checkbox">
+                    <span>请阅读并同意协议</span>
+                    <a href="">阅读本网站协议</a>
+                </p>
+                <p>
+                    <input type="submit" value="点击注册">
+                </p>
+            </form>
+        </div>
+        <div class="content_right">
+            <p>
+                <span>已经注册请登录</span>
+                <a href="signIn.html">点击登录</a>
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_one">
+            <dl>
+                <dt></dt>
+                <dd>品类齐全,轻松购物</dd>
+            </dl>
+            <dl>
+                <dt></dt>
+                <dd>品类齐全,轻松购物</dd>
+            </dl>
+            <dl>
+                <dt></dt>
+                <dd>品类齐全,轻松购物</dd>
+            </dl>
+            <dl>
+                <dt></dt>
+                <dd>品类齐全,轻松购物</dd>
+            </dl>
+        </div>
+        <div class="footer_two">
+            <div class="footer_two_dk">
+                <ul>
+                    <li>购物指南</li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">配送费收费</a></li>
+                    <li><a href="">购物方</a></li>
+                    <li><a href="">购物方式</a></li>
+                </ul>
+                <ul>
+                    <li>配送方式</li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">配送费收送费</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+                <ul>
+                    <li>支付方式</li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式送</a></li>
+                    <li><a href="">配送费收</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+                <ul>
+                    <li>售后服务</li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">配送费收</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>  
+        </div>
+        <p class="footer_three">
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+        </p>
+        <p class="footer_four">Copyright &copy; 2019 dk dk</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,274 @@
+/* top+header+nav+footer */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    min-width: 1004px;
+    font-family: "微软雅黑", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1"
+}
+
+.top {
+    height: 34px;
+    background: #E3E4E5;
+    width: 100%;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.top .top_nav {
+    margin: 0 auto;
+    width: 1004px;
+    height: 34px;
+}
+
+.top_nav .location {
+    margin-top: 6px;
+    vertical-align: top;
+    /* 图片后面有文字，让文字居中 */
+}
+
+.top_nav .place {
+    display: inline-block;
+    margin-right: 160px;
+    line-height: 34px;
+}
+
+.top_nav_right {
+    display: inline-block;
+    width: 709px;
+    color: #999;
+}
+
+.top_nav_right a+span {
+    color: #CCC;
+    font-weight: 400;
+}
+
+.top_nav_right a {
+    margin: 0 8px;
+}
+
+.top a:hover {
+    color: #f00;
+}
+
+.top_nav_right .login {
+    margin-right: 0;
+}
+
+.header {
+    margin: 0 auto;
+    width: 1004px;
+}
+
+.header form input:first-child {
+    width: 384px;
+    height: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: 0;
+    border: 1px solid #CCC;
+    border-right: 1px solid transparent;
+    padding-left: 10px;
+    vertical-align: top;
+}
+
+.header form input:last-child {
+    margin-left: -1px;
+    width: 64px;
+    height: 32px;
+    background: #D9534F url(../images/fangda_03.png) no-repeat center;
+    background-size: 14px;
+    outline: 0;
+    border: 0;
+}
+
+.header form input:last-child:hover {
+    background: #dd7c78 url(../images/fangda_03_1.png) no-repeat center;
+    background-size: 14px;
+}
+
+.header p {
+    padding: 0 3px;
+}
+
+.header p a {
+    font-size: 13px;
+}
+
+.header .search {
+    margin: 15px auto 0px;
+    width: 460px;
+    height: 58px;
+}
+/* nav部分 */
+.__nav {
+    width: 100%;
+    margin-top: 15px;
+    border-bottom: 2px solid #B1191A;
+}
+
+.__nav ul {
+    overflow: hidden;
+    width: 1004px;
+    margin: 0 auto;
+}
+
+.__nav ul li {
+    float: left;
+}
+
+.__nav ul li a {
+    display: block;
+    height: 58px;
+    line-height: 58px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #B1191A;
+
+    /* font-weight: 700; */
+}
+
+.__nav ul li a:hover {
+    background: #B1191A;
+    color: #fff;
+}
+
+.__nav .nav_first_a {
+    padding: 0 30px;
+    background: #B1191A;
+    color: #fff;
+}
+/* footer部分 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    margin-top: 14px;
+    width: 100%;
+    background: #EAEAEA;
+}
+
+.footer_one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 宽度100%，没有定宽，但子元素定宽了，当父容器变小后，字元素由于一排放不下，会掉下来；解决给父元素加宽，或给body定min-width*/
+    border-bottom: 1px solid #009688;
+}
+
+.footer_one {
+    height: 100px;
+}
+
+.footer_one dl {
+    margin: 0 14px;
+}
+
+.footer_one dl dt {
+    display: inline-block;
+    width: 37px;
+    height: 43px;
+    /* 先变性，再在前面的元素上加  vertical-align: middle;*/
+    vertical-align: middle;
+
+}
+/* 精灵图 */
+.footer_one dl:nth-child(1) dt {
+    background: url("../images/ico_service.png") no-repeat 0px 0px;
+}
+
+.footer_one dl:nth-child(2) dt {
+    background: url("../images/ico_service.png") no-repeat 0px -42px;
+}
+
+.footer_one dl:nth-child(3) dt {
+    background: url("../images/ico_service.png") no-repeat 0px -85px;
+}
+
+.footer_one dl:nth-child(4) dt {
+    background: url("../images/ico_service.png") no-repeat 0px -128px;
+}
+
+.footer_one dl dd {
+    display: inline-block;
+    width: 150px;
+    font-size: 18px;
+}
+
+.footer_two_dk {
+    width: 1004px;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.footer_two_dk ul:first-child {
+    margin-left: 151px;
+}
+
+.footer_two {
+    height: 198px;
+    border-bottom: 1px solid #009688;
+}
+
+.footer_two ul {
+    flex: 1 1 25%;
+}
+
+.footer_two ul li {
+    margin: 10px 0;
+}
+
+.footer_two ul li:first-child {
+    font-size: 16px;
+    font-weight: 700;
+    color: #5C5C5C;
+}
+
+.footer_two ul li:nth-child(n+1) {
+    font-size: 13px;
+    color: #5F5F5F;
+}
+
+.footer_three,
+.footer_four {
+    width: 1004px;
+    margin: 15px auto;
+    font-size: 13px;
+    color: #ccc;
+    text-align: center;
+}
+
+.footer_three a {
+    color: #5F5F5F;
+}
+
+.footer_four {
+    color: #5F5F5F;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>西湖商城</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/header_nav_footer.css">
+    
+   
+    <!-- <script src="js/loginChecked.js"></script>  -->
+</head>
+<style>
+    /* 轮播图样式 */
+     #banner_pic {
+            list-style: none;
+            display: flex;
+            position: absolute;
+            bottom: 80px;
+            left: 720px;
+            width: 200px;
+            height: 25px;
+            border-radius: 8px;
+            background: #E7E8EC;
+        }
+
+        #banner_pic li {
+            padding: 4px 10px;
+            border-radius: 50%;
+            opacity: 0.7;
+            width: 15px;
+            height: 15px;
+            line-height: 15px;
+            border-radius: 50%;
+            text-align: center;
+            margin: 0 5px;
+        }
+
+        .item {
+            background: #ccc;
+            color: #000;
+        }
+
+        .active {
+            background: red;
+            color: #fff;
+        }
+        #admin{
+            color: red;
+        }
+
+</style>
+<body>
+    <div class="top">
+        <div class="top_nav">
+            <img class="location" src="images/icon_location.png" alt="">
+            <a class="place" href="">杭州</a>
+            <div class="top_nav_right">
+                <span> <a href="login.html"></a> </span>
+                <a class="login" href="login.html" id="admin">登录</a>
+                <a href="register.html">免费注册</a>
+                <span>|</span>
+                <a href="searchResult.html">商品搜索
+                    <img src="images/sanjiao_03.png" alt="">
+                </a>
+                <span>|</span>
+                <a href="">商城会员</a>
+                <span>|</span>
+                <a href="">企业采购</a>
+                <span>|</span>
+                <a href="customerService.html">客户服务</a>
+                <span>|</span>
+                <a href="">网站导航</a>
+                <span>|</span>
+                <a href="shoppingCart.html">我的购物车</a>
+            </div>   
+        </div> 
+    </div>
+    <div class="header">
+        <div class="search">
+            <form action="">
+                <input type="text" name="search" placeholder="输入你想要的商品"><input type="submit" value="">
+            </form>
+            <p>
+                <a href="">买2送1</a>
+                <a href="">领500神券</a>
+                <a href="">199减100</a>
+                <a href="">服装</a>
+                <a href="">ups电源</a>
+                <a href="">虎牌</a>
+                <a href="">母婴5折抢</a>
+                <a href="">取暖器</a>
+                <a href="">手机</a>
+            </p>
+        </div> 
+    </div>
+    <div class="nav">
+        <ul class="header_nav">
+            <li><a href="">秒杀</a></li>
+            <li><a href="">优惠券</a></li>
+            <li><a href="">秒杀</a></li>
+            <li><a href="">秒杀</a></li>
+            <li><a href="">优惠券</a></li>
+            <li><a href="">秒杀</a></li>
+            <li><a href="">秒杀</a></li>
+            <li><a href="">优惠券</a></li>
+            <li><a href="">秒杀</a></li>
+        </ul>
+    </div>
+    <div class="body">
+        <div class="body_one">
+            <ul>
+                <li>
+                    <a href="">家用电器</a>
+                </li>
+                <li>
+                    <a href="">手机</a>
+                    /
+                    <a href="">运营商</a>
+                    /
+                    <a href="">数码</a>
+                </li>
+                <li>
+                    <a href="">手机</a>
+                    /
+                    <a href="">运营商</a>
+                </li>
+                <li>
+                    <a href="">手机</a>
+                    /
+                    <a href="">运营商</a>
+                    /
+                    <a href="">数码</a>
+                    /
+                    <a href="">办公</a>
+                </li>
+                <li>
+                    <a href="">手机</a>
+                    /
+                    <a href="">运营商</a>
+                    /
+                    <a href="">数码</a>
+                </li>
+                <li>
+                    <a href="">手机</a>
+                    /
+                    <a href="">运营商</a>
+                    /
+                    <a href="">数码</a>
+                </li>
+                <li>
+                    <a href="">手机</a>
+                    /
+                    <a href="">运营商</a>
+                    /
+                    <a href="">数码</a>
+                </li>
+                <li>
+                    <a href="">手机</a>
+                    /
+                    <a href="">运营商</a>
+                    /
+                    <a href="">数码</a>
+                </li>
+                <li>
+                    <a href="">手机</a>
+                    /
+                    <a href="">运营商</a>
+                    /
+                    <a href="">数码</a>
+                </li>
+                <li>
+                    <a href="">手机</a>
+                    /
+                    <a href="">运营商</a>
+                    /
+                    <a href="">数码</a>
+                </li>
+                <li>
+                    <a href="">手机</a>
+                    /
+                    <a href="">运营商</a>
+                    /
+                    <a href="">数码</a>
+                </li>
+                <li>
+                    <a href="">手机</a>
+                    /
+                    <a href="">运营商</a>
+                    /
+                    <a href="">数码</a>
+                </li>
+                <li>
+                    <a href="">手机</a>
+                    /
+                    <a href="">运营商</a>
+                    /
+                    <a href="">数码</a>
+                </li>
+                <li>
+                    <a href="">手机</a>
+                    /
+                    <a href="">运营商</a>
+                    /
+                    <a href="">数码</a>
+                </li>
+              
+            </ul>
+            <div class="main_picture">
+                <a href=""> <img src="images/1.jpg" alt="" id="pic"></a>
+                <ul id="banner_pic">
+                    <li class="active">1</li>
+                    <li class="item">2</li>
+                    <li class="item">3</li>
+                    <li class="item">4</li>
+                    <li class="item">5</li>
+                </ul>
+                <a href=""><img src="images/nav_showimg1.jpg" alt=""></a>
+                <a href=""><img src="images/nav_showimg2.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="body_two">
+            <img src="images/clock.png" alt="">
+            <h2>限时秒杀</h2>
+            <span>总有不到你想不到的低价</span>
+            <span>当前场次</span>
+            <b id="_hour"></b>
+            <div class="dian">
+                <!-- div做时间中间的方形冒号 -->
+                <div></div>
+                <div></div>
+            </div>
+            <b id="_minute"></b>
+            <div class="dian">
+                <div></div>
+                <div></div>
+            </div>
+            <b id="_second"></b>
+            <span>后结束抢购</span>
+        </div>
+        <div class="body_three">
+            <dl>
+                <dt>
+                    <a href=""><img src="images/seckill-item1.jpg" alt=""></a> 
+                </dt>
+                <dd class="shuoming_3">【赠小风扇】 维他 柠檬茶250mL*32盒 礼品装 整箱</dd>
+                <dd class="price_3">
+                    <span class="cny_3">￥</span><span>71.9</span>
+                    <del>￥89.6</del>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href=""><img src="images/seckill-item2.jpg" alt=""></a> 
+                </dt>
+                <dd class="shuoming_3">【赠小风扇】 维他 柠檬茶250mL*32盒 礼品装 整箱</dd>
+                <dd class="price_3">
+                    <span class="cny_3">￥</span><span>71.9</span>
+                    <del>￥89.6</del>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href=""><img src="images/seckill-item3.jpg" alt=""></a> 
+                </dt>
+                <dd class="shuoming_3">【赠小风扇】 维他 柠檬茶250mL*32盒 礼品装 整箱</dd>
+                <dd class="price_3">
+                    <span class="cny_3">￥</span><span>71.9</span>
+                    <del>￥89.6</del>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href=""> <img src="images/seckill-item4.jpg" alt=""></a>
+                </dt>
+                <dd class="shuoming_3">【赠小风扇】 维他 柠檬茶250mL*32盒 礼品装 整箱</dd>
+                <dd class="price_3">
+                    <span class="cny_3">￥</span><span>71.9</span>
+                    <del>￥89.6</del>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href=""><img src="images/seckill-item5.jpg" alt=""></a> 
+                </dt>
+                <dd class="shuoming_3">【赠小风扇】 维他 柠檬茶250mL*32盒 礼品装 整箱</dd>
+                <dd class="price_3">
+                    <span class="cny_3">￥</span><span>71.9</span>
+                    <del>￥89.6</del>
+                </dd>
+            </dl>
+        </div>
+        <div class="body_four">
+            <h2>电脑数码</h2>
+            <a class="body_four_a" href="">游戏极品</a>
+            <a href="">游戏极品</a>
+            <a href="">游戏极品</a>
+            <a href="">游戏极品</a>
+            <a href="">游戏极品</a>
+            <a href="">游戏极品</a>
+            <a href="">游戏极品</a>
+            <a href="">游戏极品</a>
+            <a href="">游戏极品</a>
+        </div>
+        <div class="body_five">
+            <div class="body_five_content body_five_left">
+                <div  class="body_five_p1">
+                    <a href=""><img src="images/item-computer-1.jpg" alt=""></a>
+                </div>
+                <div class="four_pic">
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/item-computer-2.jpg" alt=""></a> 
+                        </dt>
+                        <dd>
+                            <p>电脑馆</p>
+                            <p>笔记本999元限量秒！</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/item-computer-1-3.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <p>电脑馆</p>
+                            <p>笔记本999元限量秒！</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/item-computer-1-4.jpg" alt=""></a> 
+                        </dt>
+                        <dd>
+                            <p>电脑配件</p>
+                            <p>联合满减</p>
+                            <p>最高省618</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/item-computer-1-5.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <p>电脑馆</p>
+                            <p>笔记本999元限量秒！</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="body_five_p2">
+                    <a href=""><img src="images/item-computer-1-6.jpg" alt=""></a>
+                </div>
+                <div class="body_five_p3">
+                    <a href=""><img src="images/item-computer-1-7.jpg" alt=""></a>
+                </div>
+                <div class="body_five_p4">
+                    <a href=""><img src="images/item-computer-1-8.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="body_five_content body_five_right">
+                <div  class="body_five_p1">
+                    <a href=""><img src="images/item-computer-2-1.jpg" alt=""></a>
+                </div>
+                <div class="four_pic">
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/item-computer-2-2.jpg" alt=""></a> 
+                        </dt>
+                        <dd>
+                            <p>电脑馆</p>
+                            <p>笔记本999元限量秒！</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href=""> <img src="images/item-computer-2-3.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <p>电脑馆</p>
+                            <p>笔记本999元限量秒！</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/item-computer-2-4.jpg" alt=""></a> 
+                        </dt>
+                        <dd>
+                            <p>电脑配件</p>
+                            <p>联合满减</p>
+                            <p>最高省618</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/item-computer-2-5.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <p>电脑馆</p>
+                            <p>笔记本999元限量秒！</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="body_five_p2">
+                    <a href=""><img src="images/item-computer-2-6.jpg" alt=""></a>
+                </div>
+                <div class="body_five_p3">
+                    <a href=""><img src="images/item-computer-2-7.jpg" alt=""></a>
+                </div>
+                <div class="body_five_p4">
+                    <a href=""> <img src="images/item-computer-2-8.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="body_sex body_four">
+            <h2>爱吃</h2>
+            <a class="body_four_a" href="">游戏极品</a>
+            <a href="">游戏极品</a>
+            <a href="">游戏极品</a>
+            <a href="">游戏极品</a>
+            <a href="">游戏极品</a>
+            <a href="">游戏极品</a>
+            <a href="">游戏极品</a>
+            <a href="">游戏极品</a>
+            <a href="">游戏极品</a>
+        </div>
+        <div class="body_seven body_five">
+            <div class="body_five_content body_five_left">
+                <div  class="body_five_p1">
+                    <a href=""><img src="images/item-eat-1-1.jpg" alt=""></a>
+                </div>
+                <div class="four_pic">
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/item-eat-1-2.jpg" alt=""></a> 
+                        </dt>
+                        <dd>
+                            <p>电脑馆</p>
+                            <p>笔记本999元限量秒！</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/item-eat-1-3.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <p>电脑馆</p>
+                            <p>笔记本999元限量秒！</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/item-eat-1-4.jpg" alt=""></a> 
+                        </dt>
+                        <dd>
+                            <p>电脑配件</p>
+                            <p>联合满减</p>
+                            <p>最高省618</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/item-eat-1-5.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <p>电脑馆</p>
+                            <p>笔记本999元限量秒！</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="body_five_p2">
+                    <a href=""><img src="images/item-eat-1-6.jpg" alt=""></a>
+                </div>
+                <div class="body_five_p3">
+                    <a href=""><img src="images/item-eat-1-7.jpg" alt=""></a>
+                </div>
+                <div class="body_five_p4">
+                    <a href=""><img src="images/item-eat-1-8.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="body_five_content body_five_right">
+                <div  class="body_five_p1">
+                    <a href=""><img src="images/item-eat-2-1.jpg" alt=""></a>
+                </div>
+                <div class="four_pic">
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/item-eat-2-2.jpg" alt=""></a> 
+                        </dt>
+                        <dd>
+                            <p>电脑馆</p>
+                            <p>笔记本999元限量秒！</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href=""> <img src="images/item-eat-2-2.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <p>电脑馆</p>
+                            <p>笔记本999元限量秒！</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/item-eat-2-2.jpg" alt=""></a> 
+                        </dt>
+                        <dd>
+                            <p>电脑配件</p>
+                            <p>联合满减</p>
+                            <p>最高省618</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href=""><img src="images/item-eat-2-2.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <p>电脑馆</p>
+                            <p>笔记本999元限量秒！</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="body_five_p2">
+                    <a href=""><img src="images/item-eat-2-6.jpg" alt=""></a>
+                </div>
+                <div class="body_five_p3">
+                    <a href=""><img src="images/item-eat-2-7.jpg" alt=""></a>
+                </div>
+                <div class="body_five_p4">
+                    <a href=""> <img src="images/item-eat-2-8.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_one">
+            <dl>
+                <dt></dt>
+                <dd>品类齐全,轻松购物</dd>
+            </dl>
+            <dl>
+                <dt></dt>
+                <dd>品类齐全,轻松购物</dd>
+            </dl>
+            <dl>
+                <dt></dt>
+                <dd>品类齐全,轻松购物</dd>
+            </dl>
+            <dl>
+                <dt></dt>
+                <dd>品类齐全,轻松购物</dd>
+            </dl>
+        </div>
+        <div class="footer_two">
+            <div class="footer_two_dk">
+                <ul>
+                    <li>购物指南</li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">配送费收费</a></li>
+                    <li><a href="">购物方</a></li>
+                    <li><a href="">购物方式</a></li>
+                </ul>
+                <ul>
+                    <li>配送方式</li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">配送费收送费</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+                <ul>
+                    <li>支付方式</li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式送</a></li>
+                    <li><a href="">配送费收</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+                <ul>
+                    <li>售后服务</li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">配送费收</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>  
+        </div>
+        <p class="footer_three">
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+        </p>
+        <p class="footer_four">Copyright &copy; 2019 dk dk</p>
+    </div>
+    <!-- <script src="js/checkAccount.js"></script> -->
+    <script src="js/banner.js"></script>
+   
+</body>
+</html>

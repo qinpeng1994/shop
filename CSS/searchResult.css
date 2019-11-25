@@ -1,0 +1,330 @@
+/* 参考京东商品搜索 */
+.body {
+    width: 1004px;
+    margin: 0 auto;
+}
+
+.body .body_top {
+    padding: 5px 0;
+    font-size: 12px;
+    font-weight: 700;
+    color: #666;
+}
+
+.body .body_top a {
+    color: #666;
+}
+
+.selector {
+    font-size: 12px;
+    color: #666;
+}
+
+.selector p {
+    height: 34px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    /* 单行超出打点 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.selector p span {
+    display: inline-block;
+    /*  6+6+22=34等于高，居中*/
+    padding: 6px 0 6px 10px;
+    font-weight: 700;
+    width: 92px;
+    height: 22px;
+    line-height: 22px;
+    background: #F3F3F3;
+}
+
+.selector p a {
+    display: inline-block;
+    /* 6+6+22=34等于高，居中 */
+    margin: 6px 0;
+    padding: 0 6px;
+    height: 22px;
+    line-height: 22px;
+    color: #005aa0;
+}
+
+.selector p a:hover {
+    color: #e4393c;
+}
+
+.body_content {
+    width: 1004px;
+    margin-top: 15px;
+    /* 清除 */
+    overflow: hidden;
+}
+
+.body_content .aside {
+    float: left;
+    width: 154px;
+    border: 1px solid #ddd;
+}
+
+.body_content .aside_top {
+    /* 给下面小内容定位用 */
+    position: relative;
+}
+
+.body_content .aside_top h3 {
+    margin-left: 15px;
+    font-size: 14px;
+    color: #e4393c;
+    height: 30px;
+    line-height: 30px;
+}
+
+.body_content .aside_top span {
+    /* 小内容定位 */
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    font-size: 9px;
+    color: #ccc;
+}
+
+.body_content .aside_content {
+    width: 124px;
+    /* 根据图片设置宽度，给两边留空间 */
+    padding: 0 15px;
+}
+
+.body_content .aside_content li {
+    margin-bottom: 15px;
+}
+
+.body_content .aside_content img {
+    width: 124px;
+    height: 124px;
+    /* 去低白边 */
+    vertical-align: middle;
+}
+
+.body_content .aside_content p strong {
+    font-size: 12px;
+    color: #e4393c;
+}
+
+.body_content .aside_content em,
+.body_content .aside_content i {
+    /* strong em和i标签用来包裹价格，去掉默认样式 */
+    font-style: normal;
+}
+
+.body_content .aside_content li a:nth-of-type(2) {
+    display: inline-block;
+    height: 32px;
+    /* 两行 */
+    line-height: 16px;
+    /* 字体过多超过两行隐藏 */
+    overflow: hidden;
+    font-size: 9px;
+    color: #666;
+}
+
+.body_content .aside_content li p:last-child {
+    font-size: 9px;
+    color: #666;
+}
+
+.body_content .aside_content li p:last-child span {
+    color: #005aa0;
+}
+
+.main_content {
+    float: left;
+    width: 838px;
+    margin-left: 10px;
+}
+
+.main_content .sort {
+    width: 838px;
+    height: 27px;
+    /* 27=内部a高 */
+    padding: 6px 0px;
+    /* padding左右设置后会增加宽 */
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: #F1F1F1;
+
+}
+
+.main_content .sort a {
+    display: inline-block;
+    float: left;
+    width: 56px;
+    height: 25px;
+    color: #e4393c;
+    background: #fff;
+    /* 高25+2=27 */
+    border: 1px solid #ccc;
+    font-size: 12px;
+    vertical-align: top;
+    /* 不设置vertical-align: top，a会掉下来一点 */
+
+}
+
+.main_content .sort a:first-child {
+    /* 把a顶到后面，27距离由下面content_subject中li算出的11+11+5=27 */
+    margin-left: 27px;
+    background: #e4393c;
+    color: #fff;
+    border-color: #e4393c;
+    /* 上面设置过boeder，只改变颜色 */
+}
+
+.main_content .sort a:hover {
+    border: 1px solid #e4393c;
+}
+
+.main_content .sort a span {
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    margin-left: 10px;
+    vertical-align: top;
+    /* 必须span和i同时设置vertical-align: top，不然调整i的margin-top时，span会跟着动 */
+}
+
+.main_content .sort .arrow {
+    display: inline-block;
+    /* inline-block的基线问题 */
+    vertical-align: top;
+    /* 必须span和i同时设置vertical-align: top，不然调整i的margin-top时，span会跟着动 */
+    margin-top: 7px;
+    width: 7px;
+    height: 11px;
+    /* 精灵图 */
+    background: url("../images/JD/sprite-arrow.png") no-repeat 0 -100px;
+}
+
+.main_content .sort a:first-child .arrow {
+    /* 第一个箭头单独白色 */
+    background: url("../images/JD/sprite-arrow.png") no-repeat 0 -120px;
+}
+
+.content_subject {
+    /* 838-11*2 =816*/
+    width: 816px;
+    /* 11根据Li内边距算出来的*/
+    padding: 0 11px;
+    overflow: hidden;
+
+}
+
+.content_subject ul li {
+    float: left;
+    /* 给li定宽170+2+10=182 */
+    border: 1px solid transparent;
+    /* 由于下面要有鼠标放在li上有border，所以要提前把border加上，不然border会增加宽度，破坏布局，挤下来 */
+    /* 为了不让border紧紧包裹内容，设置padding */
+    padding: 5px;
+    width: 170px;
+    /* 内容写完后根据内容定高 */
+    height: 271px;
+    /* 加入li左右边距为x，为了最左最右和中间的距离都相等，则10x分配剩余空间（10x中有2x是content_subject的内边距）
+    10x=838-182*4 x=11*/
+    margin: 16px 11px;
+    /* 16px,由控制台调整 */
+}
+
+.content_subject ul li:hover {
+    /* 为了不破坏布局，要在hover之前就加透明的border */
+    border: 1px solid #ccc;
+    /* 阴影 */
+    box-shadow: 0 0 10px #ccc;
+}
+
+.content_subject ul li a img {
+    width: 170px;
+    height: 170px;
+    /* 去低白边 */
+    vertical-align: middle;
+}
+
+.content_subject ul li p strong {
+    display: block;
+    /* 加高 */
+    margin: 5px 0;
+    font-size: 15px;
+    color: #e4393c;
+}
+
+.content_subject ul li p strong em {
+    font-size: 10px;
+}
+
+.content_subject ul li p strong em,
+.content_subject ul li p strong i {
+    /* strong em和i标签用来包裹价格，去掉默认样式 */
+    font-style: normal;
+}
+
+.content_subject li a:nth-of-type(2) {
+    display: inline-block;
+    height: 32px;
+    /* 两行 */
+    line-height: 16px;
+    /* 字体过多超过两行隐藏 */
+    overflow: hidden;
+    font-size: 10px;
+    color: #666;
+}
+
+.content_subject li p:nth-of-type(2) {
+    font-size: 10px;
+    color: #19A093;
+}
+
+.content_subject li p:nth-of-type(2) a {
+    color: #005aa0;
+}
+
+.content_subject li>a:last-child {
+    font-size: 10px;
+    color: #f00;
+}
+
+.bottom_page {
+    overflow: hidden;
+}
+
+.bottom_page span {
+    display: block;
+    float: right;
+    margin-right: 27px;
+}
+
+.bottom_page span a {
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    font-size: 11px;
+    color: #337AB7;
+}
+
+.bottom_page span a:hover {
+    background: #CCC;
+}
+
+.bottom_page span a:nth-child(1) {
+    border-left: 1px solid #ccc;
+}
+
+.bottom_page span a:nth-child(2) {
+    background: #337AB7;
+    color: #fff;
+}

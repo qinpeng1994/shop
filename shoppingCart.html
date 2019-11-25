@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="CSS/header_nav_footer.css">
+    <link rel="stylesheet" href="CSS/shoppingCart.css">
+    <script src="js/shoppingCart.js"></script>
+    <script src="js/banner.js"></script>
+    <!-- <script src="js/checkAccount.js"></script> -->
+    <!-- <script src="js/loginChecked.js"></script>  -->
+    <script src="js/searchResult.js"></script>
+  
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+/* html,
+body {
+    min-width: 1024px;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+} */
+
+a {
+    text-decoration: none;
+}
+
+header {
+    flex-basis: 100%;
+    padding: 15px 0px;
+}
+
+nav {
+    flex-basis: 100%;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+
+}
+
+nav li {
+    flex-basis: 20%;
+    text-align: center;
+    background: #ccc;
+    font-weight: 700;
+    padding: 3px 0;
+}
+
+nav li:nth-child(1) {
+    background: orange;
+    color: #fff;
+}
+
+article {
+    flex-basis: 100%;
+}
+
+article table {
+    width: 100%;
+    margin: 15px 0;
+}
+
+article table tr td {
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+article table tr:nth-child(1) th {
+    border-bottom: 2px solid #A7CBFF;
+}
+
+article table tr:nth-child(2n) td {
+    text-align: left;
+}
+
+article table tr:nth-child(2n+3) td {
+    background: #E2F2FF;
+}
+
+article table tr:nth-child(2n+3) td:nth-child(2) dl {
+    display: flex;
+    text-align: left;
+}
+
+article table tr:nth-child(2n+3) td:nth-child(3) {
+    font-weight: 700;
+}
+
+article table tr:nth-child(2n+3) td:nth-child(5) input {
+    width: 20px;
+    text-align: center;
+}
+
+article table tr:nth-child(2n+3) td:nth-child(6) {
+    font-weight: 700;
+    color: orange;
+}
+section{
+    display: flex;
+    width: 100%;
+}
+section div{
+    flex-basis: 50%;
+}
+section div:nth-child(2){
+    text-align: right;
+}
+#total,#integral{
+    color: orange;
+    font-weight: 700;
+    font-size: 20px;
+}
+#deleteAll{
+    width: 100px;
+    height: 30px;
+}
+#submit{
+    display: inline-block;
+    background: orangered;
+    border:1px solid orangered;
+    color: #fff;
+    font-weight: 700;
+    width: 100px;
+    height: 30px;
+}
+</style>
+<body onload="init()">
+    <div class="top">
+        <div class="top_nav">
+            <img class="location" src="images/icon_location.png" alt="">
+            <a class="place" href="">送至杭州</a>
+            <div class="top_nav_right">
+                <span></span>
+                <a class="login" href="login.html" id="admin">登录</a>
+                <a href="register.html">免费注册</a>
+                <span>|</span>
+                <a href="searchResult.html">商品搜索
+                    <img src="images/sanjiao_03.png" alt="">
+                </a>
+                <span>|</span>
+                <a href="">商城会员</a>
+                <span>|</span>
+                <a href="">企业采购</a>
+                <span>|</span>
+                <a href="customerService.html">客户服务</a>
+                <span>|</span>
+                <a href="">网站导航</a>
+                <span>|</span>
+                <a href="shoppingCart.html">我的购物车</a>
+            </div>   
+        </div> 
+    </div>
+    <div class="header">
+        <div class="search">
+            <form action="">
+                <input type="text" name="search" placeholder="输入你想要的商品"><input type="submit" value="">
+            </form>
+            <p>
+                <a href="">买2送1</a>
+                <a href="">领500神券</a>
+                <a href="">199减100</a>
+                <a href="">服装</a>
+                <a href="">ups电源</a>
+                <a href="">虎牌</a>
+                <a href="">母婴5折抢</a>
+                <a href="">取暖器</a>
+                <a href="">手机</a>
+            </p>
+        </div> 
+    </div>
+    <div class="__nav">
+       <ul>
+            <li><a class="nav_first_a" href="">全部商品分类</a></li>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="">服装城</a></li>
+            <li><a href="">美妆馆</a></li>
+            <li><a href="">京东超市</a></li>
+            <li><a href="">生鲜</a></li>
+            <li><a href="">全球购</a></li>
+            <li><a href="">闪购</a></li>
+            <li><a href="">拍卖</a></li>
+            <li><a href="">金融</a></li>
+       </ul> 
+    </div>
+    <div class="body">
+        <!-- <div class="body_one_box"> 
+            <div class="body_one">
+                <div class="jiesuan">
+                    <a href="commodityDetails.html">查看商品详情</a>
+                    <a href="shoppingCart.html">去购物车结算 ></a> 
+                </div>
+                <p>
+                    <img src="images/success_03.png" alt="">
+                    <span>商品已成功加入购物车！</span>
+                </p>
+                <dl>
+                    <dt>
+                        <img src="images/sidebar/3.jpg" alt="">
+                    </dt>
+                    <dd>
+                        <p>Apple iPhone 8 Plus (A1864) 64GB 深空灰色 移动联通电信4G手机Apple iPhone 8 Plus (A1864) 64GB 深空灰色 移动联通电信4G手机</p>
+                        <p>颜色:4.7英寸-深邃蓝/数量:1</p>
+                    </dd>
+                </dl>
+            </div>
+        </div> -->
+        <article>
+            <form action="paymentSuccessful.html">
+                <table cellspacing="0" id="shopping">
+                    <tr>
+                        <th><input type="checkbox" id="checkAll">全选</th>
+                        <th>店铺宝贝</th>
+                        <!-- <th>获积分</th> -->
+                        <th>单价（元）</th>
+                        <th>数量</th>
+                        <th>小计（元）</th>
+                        <th>操作</th>
+                    </tr>
+                </table>
+                <section>
+                    <div>
+                        <input type="button" value="删除所选" onclick="deleteAll()">
+                    </div>
+                    <div>
+                        <p>商品总价（不含运费）：<span id="total"></span>元</p>
+                        <!-- <p>可获积分<span id="integral"></span>点</p> -->
+
+                        <input type="submit" value="立刻购买" onclick="buyAll()">
+                    </div>
+                </section>
+            </form>
+        </article>
+        <p>购买了该商品的用户还购买了</p>
+        <div class="body_two">
+            <dl>
+                <dt>
+                    <a href=""><img src="images/other_buy/1.jpg" alt=""></a>
+                </dt>
+                <dd>
+                    <a href="">深空灰色玫瑰金 移动联通电信手机Apple iPhone 8 Plus</a>
+                    <a href="">￥29.00</a>  
+                    <button>加入购物车</button>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href=""><img src="images/other_buy/2.jpg" alt=""></a>
+                </dt>
+                <dd>
+                    <a href="">深空灰色玫瑰金 移动联通电信手机Apple iPhone 8 Plus</a>
+                    <a href="">￥29.00</a>  
+                    <button>加入购物车</button>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href=""><img src="images/other_buy/3.jpg" alt=""></a>
+                </dt>
+                <dd>
+                    <a href="">Apple iPhone 8 Plus (A1864) 64GB 深空灰色</a>
+                    <a href="">￥29.00</a>  
+                    <button>加入购物车</button>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href=""><img src="images/other_buy/4.jpg" alt=""></a>
+                </dt>
+                <dd>
+                    <a href="">深空灰色玫瑰金 移动联通电信手机Apple iPhone 8 Plus</a>
+                    <a href="">￥29.00</a>  
+                    <button>加入购物车</button>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href=""><img src="images/other_buy/5.jpg" alt=""></a>
+                </dt>
+                <dd>
+                    <a href="">Apple iPhone 8 Plus (A1864) 64GB 深空灰色</a>
+                    <a href="">￥29.00</a>  
+                    <button>加入购物车</button>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href=""><img src="images/other_buy/6.jpg" alt=""></a>
+                </dt>
+                <dd>
+                    <a href="">深空灰色玫瑰金 移动联通电信手机Apple iPhone 8 Plus</a>
+                    <a href="">￥29.00</a>  
+                    <button>加入购物车</button>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href=""><img src="images/other_buy/7.jpg" alt=""></a>
+                </dt>
+                <dd>
+                    <a href="">Apple iPhone 8 Plus (A1864) 64GB 深空灰色</a>
+                    <a href="">￥29.00</a>  
+                    <button>加入购物车</button>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href=""><img src="images/other_buy/8.jpg" alt=""></a>
+                </dt>
+                <dd>
+                    <a href="">深空灰色玫瑰金 移动联通电信手机Apple iPhone 8 Plus</a>
+                    <a href="">￥29.00</a>  
+                    <button>加入购物车</button>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_one">
+            <dl>
+                <dt></dt>
+                <dd>品类齐全,轻松购物</dd>
+            </dl>
+            <dl>
+                <dt></dt>
+                <dd>品类齐全,轻松购物</dd>
+            </dl>
+            <dl>
+                <dt></dt>
+                <dd>品类齐全,轻松购物</dd>
+            </dl>
+            <dl>
+                <dt></dt>
+                <dd>品类齐全,轻松购物</dd>
+            </dl>
+        </div>
+        <div class="footer_two">
+            <div class="footer_two_dk">
+                <ul>
+                    <li>购物指南</li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">配送费收费</a></li>
+                    <li><a href="">购物方</a></li>
+                    <li><a href="">购物方式</a></li>
+                </ul>
+                <ul>
+                    <li>配送方式</li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">配送费收送费</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+                <ul>
+                    <li>支付方式</li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式送</a></li>
+                    <li><a href="">配送费收</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+                <ul>
+                    <li>售后服务</li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href="">配送费收</a></li>
+                    <li><a href="">购物方式</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>  
+        </div>
+        <p class="footer_three">
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+            |
+            <a href="">关于我们</a>
+        </p>
+        <p class="footer_four">Copyright &copy; 2019 dk dk</p>
+    </div>
+</body>
+</html>

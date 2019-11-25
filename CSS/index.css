@@ -1,0 +1,378 @@
+.top .top_nav .location {
+    /* 加权重，改变地名与后面文字的间距 */
+    margin: 6px 0 0 53px;
+    vertical-align: top;
+}
+
+.top .top_nav .place {
+    margin-right: 135px;
+}
+
+/* 以下主体内容区 */
+body {
+    background: #F6F6F6;
+}
+
+.nav {
+    width: 1004px;
+    margin: 20px auto 0;
+}
+
+.header_nav {
+    margin: 0 0 16px 230px;
+    overflow: hidden;
+}
+
+.header_nav li a {
+    font-size: 16px;
+    color: #525252;
+    font-weight: 700;
+    float: left;
+    padding: 0 15px;
+}
+
+.header_nav li a:hover {
+    color: #f00;
+}
+
+.body {
+    width: 1004px;
+    margin: 0 auto;
+}
+/* 内容第一行块 */
+.body_one {
+    /* 设置弹性，让左右大块元素都挨着边界 */
+    display: flex;
+    justify-content: space-between;
+}
+
+.body_one ul {
+    width: 200px;
+    height: 485px;
+    background: #6E6568;
+    font-size: 14px;
+    color: #fff;
+
+}
+
+.body_one li {
+    padding: 7px 0 7px 10px;
+}
+
+.body_one ul li:first-child {
+    padding-top: 19px;
+}
+
+.body_one li:hover {
+    background: #999395;
+}
+
+.body_one ul a {
+    color: #fff;
+}
+
+.body_one ul a:hover {
+    color: #f00;
+}
+
+.body_one .main_picture {
+    width: 790px;
+    height: 485px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+/* 内容第二行块 */
+.body_two {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    width: 1004px;
+    height: 50px;
+    background: #E01222;
+    color: #fff;
+}
+
+/* 给小钟设置动画 */
+@keyframes change1 {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    25% {
+        transform: rotate(15deg)
+    }
+
+    50% {
+        transform: rotate(0deg)
+    }
+
+    75% {
+        transform: rotate(-15deg)
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+.body_two img {
+    margin: 0 15px 0 17px;
+    animation: change1 1s linear 0s infinite;
+    /* 小钟一直在动 */
+}
+
+.body_two h2 {
+    font-weight: 400;
+}
+
+.body_two span:nth-of-type(1) {
+    font-size: 12px;
+    margin: 14px 378px 0 10px;
+}
+
+.body_two span:nth-of-type(2),
+.body_two span:nth-of-type(3) {
+    font-size: 14px;
+    margin: 10px 3px 0 3px;
+}
+
+.body_two b {
+    display: block;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 5px;
+    font-size: 25px;
+    background: #440106;
+    color: #FC0013;
+    text-align: center;
+}
+
+.body_two .dian {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+}
+
+.body_two .dian div {
+    /* 做时间中间的方形冒号 */
+    width: 5px;
+    height: 5px;
+    background: #440106;
+}
+/* 内容第三行块 */
+.body_three {
+    /* 不用弹性盒子 */
+    /* display:flex;
+    justify-content:space-between; */
+    background: #fff;
+    height: 250px;
+    padding: 15px 12px;
+    text-align: justify;
+}
+
+.body_three::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.body_three dl {
+    display: inline-block;
+    width: 158px;
+    height: 250px;
+    border: 1px solid #ccc;
+    padding: 0 13px;
+}
+
+.body_three dl dt {
+    height: 130px;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.body_three dl dt img {
+    width: 130px;
+    height: 130px;
+}
+
+.body_three dl dt img:hover {
+    transform: translate(-6px, -6px)
+}
+
+.body_three dl .shuoming_3 {
+    height: 40px;
+    line-height: 20px;
+    width: 150px;
+    margin: 2px 4px 10px;
+    font-size: 12px;
+    color: #009688;
+}
+
+.body_three dl .price_3 span {
+    color: #A94442;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.body_three dl .price_3 .cny_3 {
+    font-size: 12px;
+}
+
+.body_three dl .price_3 del {
+    color: #009688;
+    font-size: 11px;
+    font-weight: 700;
+}
+/* 内容第四行块 */
+.body_four {
+    margin-top: 14px;
+    width: 1004px;
+    height: 50px;
+    background: #4488A7;
+    color: #fff;
+}
+
+.body_four h2 {
+    float: left;
+    margin-left: 17px;
+    font-weight: 400;
+    height: 50px;
+    line-height: 50px;
+}
+
+.body_four a {
+    display: inline-block;
+    margin: 11px 15px 11px 0;
+    padding: 0 6px;
+    height: 26px;
+    line-height: 26px;
+    color: #fff;
+    font-size: 12px;
+    background: #6DA6BE;
+    border: 1px solid #6DA6BE;
+}
+
+.body_four a:hover {
+    border: 1px solid #fff;
+}
+
+.body_four .body_four_a {
+    margin-left: 137px;
+}
+/* 内容第五行块 */
+.body_five {
+    display: flex;
+    justify-content: space-between;
+    height: 398px;
+    background: #fff;
+    padding: 14px 0 14px 9px;
+}
+
+.body_five_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 493px;
+}
+
+.body_five_p1 {
+    width: 180px;
+    height: 260px;
+    overflow: hidden;
+}
+
+.body_five_content>img {
+    width: 180px;
+    height: 260px;
+}
+
+.four_pic {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 2px;
+    /* justify-content: center;
+    align-content: center; */
+    width: 301px;
+    height: 259px
+}
+
+.body_five_content dl {
+    width: 150px;
+    height: 129px;
+}
+
+.body_five_content dt img {
+    float: right;
+    margin: 15px 8px 15px 0;
+    width: 90px;
+    height: 90px;
+}
+
+.body_five_content dd {
+    width: 59px;
+}
+
+.body_five_content dd p {}
+
+.body_five_content dd p:nth-child(1) {
+    color: #6DA6BE;
+    font-size: 12px;
+    margin: 15px 0 5px 4px;
+
+}
+
+.body_five_content dd p:nth-child(n+2) {
+    color: #096E61;
+    font-size: 13px;
+    margin-left: 4px;
+    width: 40px;
+}
+
+.four_pic dl:first-child,
+.four_pic dl:nth-child(2) {
+    border-bottom: 1px solid #ccc;
+}
+
+.four_pic dl:first-child,
+.four_pic dl:nth-child(3) {
+    border-right: 1px solid #ccc;
+}
+
+.body_five_left {
+    border-right: 1px solid #ccc;
+}
+
+.body_five .body_five_p2,
+.body_five_p3,
+.body_five_p4 {
+    width: 156px;
+    height: 130px;
+    /* 因为div内部的图片比div大，所以让超出div的部分隐藏，不然会浮出div,
+    如果是背景图片不会浮出，但为了实现动画时显示隐藏的图片，所以用div>img*/
+    overflow: hidden;
+}
+
+.body_five_p4 {
+    margin-right: 9px;
+}
+
+.body_five img:hover {
+    transform: translate(-6px, -6px);
+}
+/* 内容第六七行块，和四五一样 */
+.body_sex {
+    background: #ECB226;
+}
+
+.body_sex a {
+    background: #EEB955;
+    border: 1px solid #EEB955;
+}
