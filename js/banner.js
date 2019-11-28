@@ -1,7 +1,7 @@
 // 轮播图
 window.onload = function () {
     var pic = document.getElementById('pic')
-    var ul = document.getElementById('banner_pic');
+    var ul = document.getElementsByClassName('banner_pic')[0];
     var show = setInterval(changePic, 1800);
     var index = 1;
     function changePic() {

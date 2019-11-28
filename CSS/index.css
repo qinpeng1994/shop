@@ -83,6 +83,48 @@ body {
     justify-content: space-between;
     align-content: space-between;
 }
+
+/* 轮播图 */
+/* 轮播图样式 */
+.body_one .main_picture .banner_pic {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    bottom: 80px;
+    left: 720px; 
+    width: 200px;
+    height: 25px;
+    /* border-radius: 8px; */
+    /* background: #fff; */
+}
+.body_one .main_picture ul{
+    background: none;
+}
+
+.body_one .main_picture .banner_pic li {
+    padding: 4px 10px;
+    border-radius: 50%;
+    opacity: 0.7;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.item {
+    background: #ccc;
+    color: #000;
+}
+
+.active {
+    background: red;
+    color: #fff;
+}
+#admin{
+    color: red;
+}
 /* 内容第二行块 */
 .body_two {
     display: flex;
