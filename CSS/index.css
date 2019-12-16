@@ -44,6 +44,7 @@ body {
     /* 设置弹性，让左右大块元素都挨着边界 */
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .body_one ul {
@@ -82,6 +83,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
+    
 }
 
 /* 轮播图 */
@@ -90,12 +92,10 @@ body {
     list-style: none;
     display: flex;
     position: absolute;
-    bottom: 80px;
+    bottom: 160px;
     left: 720px; 
     width: 200px;
     height: 25px;
-    /* border-radius: 8px; */
-    /* background: #fff; */
 }
 .body_one .main_picture ul{
     background: none;
@@ -115,16 +115,17 @@ body {
 
 .item {
     background: #ccc;
-    color: #000;
+    /* color: #000; */
 }
 
 .active {
     background: red;
-    color: #fff;
+    /* color: #fff; */
 }
-#admin{
+/* #admin{
     color: red;
-}
+} */
+/* 轮播图样式结束 */
 /* 内容第二行块 */
 .body_two {
     display: flex;
