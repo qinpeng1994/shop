@@ -64,7 +64,7 @@ body {
     padding-top: 19px;
 }
 
-.body_one li:hover {
+.body_one > ul li:hover {
     background: #999395;
 }
 
@@ -115,16 +115,12 @@ body {
 
 .item {
     background: #ccc;
-    /* color: #000; */
 }
 
 .active {
     background: red;
-    /* color: #fff; */
+    
 }
-/* #admin{
-    color: red;
-} */
 /* 轮播图样式结束 */
 /* 内容第二行块 */
 .body_two {
