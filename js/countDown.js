@@ -5,7 +5,7 @@
         var date = new Date();
         var now = date.getTime();
         //设置截止时间
-        var endDate = new Date("2019-12-29 24:00:00");
+        var endDate = new Date("2030-12-29 24:00:00");
         var end = endDate.getTime();
         //时间差
         var leftTime = end - now;
